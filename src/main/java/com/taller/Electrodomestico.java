@@ -10,8 +10,8 @@ public class Electrodomestico {
     public Electrodomestico(String consumo, String procedencia) {
         this.consumo = consumo;
         this.procedencia = procedencia;
-        setPrecioConsumo(consumo);
-        setPrecioProcendencia(procedencia);
+        setPrecioConsumo(this.consumo);
+        setPrecioProcendencia(this.procedencia);
         setPrecioTotal();
     }
 

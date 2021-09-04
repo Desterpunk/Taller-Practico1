@@ -8,8 +8,8 @@ public class Televisores extends Electrodomestico {
         super(consumo,procedencia);
         this.tamano = tamano;
         this.tdt = tdt;
-        setPrecioTamano();
-        setPrecioTdt();
+        setPrecioTamano(this.tamano);
+        setPrecioTdt(this.tdt);
         setPrecioTotal();
     }
 
@@ -21,14 +21,14 @@ public class Televisores extends Electrodomestico {
         return precioTdt;
     }
 
-    public void setPrecioTamano(){
+    public void setPrecioTamano(double tamano){
         if (tamano > 40){
             this.precioTamano = super.getPrecioTotal()*0.3;
         } else {
             this.precioTamano = 0;
         }
     }
-    public void setPrecioTdt() {
+    public void setPrecioTdt(boolean tdt) {
         if (tdt) {
             this.precioTdt = 250000;
         } else {
