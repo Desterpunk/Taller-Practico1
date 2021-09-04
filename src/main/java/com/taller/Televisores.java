@@ -1,8 +1,8 @@
 package com.taller;
 
 public class Televisores extends Electrodomestico {
-    double tamano, precioTamano, precioTdt;
-    boolean tdt = false;
+    private double tamano, precioTamano, precioTdt;
+    private boolean tdt = false;
 
     public Televisores(String consumo, String procedencia, double tamano, boolean tdt) {
         super(consumo,procedencia);
