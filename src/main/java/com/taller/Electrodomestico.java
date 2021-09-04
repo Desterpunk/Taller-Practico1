@@ -5,7 +5,7 @@ public class Electrodomestico {
     private String procedencia;
     private double precioConsumo;
     private double precioProcendencia;
-    private double precioTotal;
+    protected double precioTotal;
 
     public Electrodomestico(String consumo, String procedencia) {
         this.consumo = consumo;
